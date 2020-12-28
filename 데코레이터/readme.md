@@ -1,24 +1,18 @@
 - 데코레이터 란?
     - 상속과 유사?
     - 참고 : https://ssungkang.tistory.com/entry/python-%EC%9E%A5%EC%8B%9D%EC%9E%90-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0decorator-%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
-    
+
 - Django view에서의 사용법
 
     - Function based view 일 경우
         - 방법 1
             ```
-            from django.contrib.auth.decorators import login_required
-            from django.shortcuts import render
-
             @login_required
             def post_create(request):
                 return render(request, 'core/index.html')
             ```
         - 방법 2
             ```
-            from django.contrib.auth.decorators import login_required
-            from django.shortcuts import render
-
             def post_create(request):
                 return render(request, 'core/index.html')
 
@@ -28,9 +22,6 @@
     - Class based view 일 경우
         - 방법 1 : as_view -> 함수로 감싸주기
             ```
-            from django.contrib.auth.decorators import login_required
-            from django.views.generic import TemplateView
-
             class MyTemplateView(TemplateView):
                 template_name= "core/index.html"
 
@@ -39,8 +30,6 @@
             ```
         - 방법 2 : method_decorator를 함수에 적용
             ```
-            from django.utils.decorators import method_decorator
-
             class MyTemplateView(TemplateView):
                 template_name= "core/index.html"
                 
