@@ -16,7 +16,8 @@
         - {% 태그 %} 형태
         - {% extends %} 등 단독으로 사용하는 태그 존재
         - {% if %} {% endif %} 등 함께 사용해야 하는 태그 존재
-        - 태그 목록 : https://docs.djangoproject.com/en/3.1/ref/templates/builtins/
+        - 내장 태그 목록 : https://docs.djangoproject.com/en/3.1/ref/templates/builtins/
+        - 커스텀 태그 : https://wikidocs.net/9677
         
     - 주석
         - 한 줄 : {# 주석 #}
