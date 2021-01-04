@@ -1,0 +1,22 @@
+
+- FileField
+    - 인자
+        - upload_to=None
+        - max_length=100
+    - 속성
+        - upload_to: 저장 경로 설정
+        - storage: 저장 및 검색 처리
+        - url: 경로 접근
+        - name, size, open, close, save, delete 등
+
+    - pk 불가
+
+- ImageField
+    - 인자
+        - upload_to=None
+        - height_field=None
+        - width_field=None
+        - max_length=100
+    - Pillow 라이브러리 사용
+    - DB에 varchar로 저장
+    - FileField 상속

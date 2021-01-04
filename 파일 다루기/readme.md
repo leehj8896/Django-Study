@@ -1,0 +1,6 @@
+- Static 파일과 Media 파일의 차이
+    - Static 파일 (STATIC_ROOT, STATIC_URL, STATICFILES_DIRS)
+        - 웹 사이트 또는 애플리케이션에 필요한 정적 파일들
+        - CSS, JS, JQuery, scss 및 기타 이미지 (PNG, JPG, SVG 등)
+    - Media 파일, MEDIA_ROOT
+        - 사용자가 업로드한 파일

@@ -11,6 +11,9 @@
     - queryset
     - template_name
     - context_object_name
+        - ListView에서 사용
+        - 템플릿에 전달하는 object name
+        - default : object_list
     - paginate_by
     - date_field
     - form_class
