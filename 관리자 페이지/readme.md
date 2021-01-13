@@ -26,6 +26,13 @@
                 - 참조 : https://docs.djangoproject.com/ko/3.1/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display
     - list_filter : 필터링할 변수 목록
     - search_field : 검색할 변수 목록
+    - prepopulated_fields
+        - 필드 값 자동 설정
+        - 예시
+            ```python
+            prepopulated_fields = {'slug': ('name',)}
+            ```
+            - slug 필드가 name 필드 값에 따라 자동 설정됨
 
 
 - 관계 모델 추가

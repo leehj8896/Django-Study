@@ -1,4 +1,3 @@
-
 - FileField
     - 인자
         - upload_to=None
@@ -7,6 +6,7 @@
         - upload_to: 저장 경로 설정
         - storage: 저장 및 검색 처리
         - url: 경로 접근
+            - {{ object.photo.url }}
         - name, size, open, close, save, delete 등
 
     - pk 불가
