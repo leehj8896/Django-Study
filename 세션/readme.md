@@ -41,3 +41,8 @@
         # value 삭제
         del request.session['my_car']
         ```
+    - DB에 반영하기
+        ```python
+        request.session['my_car'] = 'mini'
+        request.session.modified = True
+        ```
