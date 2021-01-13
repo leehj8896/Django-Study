@@ -57,3 +57,5 @@
     - https://developers.naver.com/products/login/api/
 
 7. 관리자 페이지에 등록
+    - Social applications 모델에 추가
+    - Client id, Secret key 등록
